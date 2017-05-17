@@ -59,9 +59,6 @@ data$dateTime <- strptime(
   tz=""
 )
 
-# convert POSIXlt to POSIXct (for dplyr groupby)
-#data$dateTime <- as.POSIXct(data$dateTime)
-
 # create year / month / day features
 data$year <- as.factor(strftime(data[,1], format="%Y"))
 data$month <- as.factor(strftime(data[,1], format="%b"))
