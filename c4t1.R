@@ -43,9 +43,6 @@ data$Global_intensity <- as.numeric(as.character(data$Global_intensity))
 data$Sub_metering_1 <- as.numeric(as.character(data$Sub_metering_1))
 data$Sub_metering_2 <- as.numeric(as.character(data$Sub_metering_2))
 
-# back up df
-databak <- data
-
 # get counts of NA rows
 data.frame(sapply(x, function(y) sum(length(which(is.na(y))))))
 
